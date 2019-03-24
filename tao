@@ -26,7 +26,7 @@
            function genarate(withoutspaces){
               var field = document.getElementById(withoutspaces);
               var get = document.getElementById(withoutspaces).value;
-              field.value = get.replace(/\s+/, "") ;
+              field.value = get.replace(/ /g,'');
               e.preventDefault();
             }
     </script>
