@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Spaces</title>
+    </head>
+    <style>
+        #container
+        {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #container input
+        {
+            width:500px;
+        }
+    </style>
+    <body>
+        <div id="container">
+        <form action="#" method="get" onclick="genarate('withoutspaces')">
+            <input type="text" id="withoutspaces" name="hidden" value=""/><br />
+            <input type="button" name="submit" value="Convert"/>
+        </form>
+        </div>
+    </body>
+    <script type="text/javascript">
+           function genarate(withoutspaces){
+              var field = document.getElementById(withoutspaces);
+              var get = document.getElementById(withoutspaces).value;
+              field.value = get.replace(/\s+/, "") ;
+              e.preventDefault();
+            }
+    </script>
+</html>
